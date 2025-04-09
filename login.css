@@ -1,0 +1,125 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+header {
+    background: rgba(49, 49, 49, 0.5);
+    color: white;
+    padding: 15px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-left: 40px;
+}
+
+#a1 {
+
+    margin-left: 500px;
+}
+
+h1 {
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    margin-left: 400px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.hero {
+    padding-left: 50px;
+    color: white;
+}
+
+
+.btn {
+border-radius: 10px;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.login-form {
+    width: 300px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.login-form h2 {
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-top: 10px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-container img {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
