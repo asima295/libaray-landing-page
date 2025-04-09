@@ -1,0 +1,180 @@
+body {
+    font-family: 'Philosopher', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+header {
+    background: rgba(49, 49, 49, 0.5);
+    color: white;
+    padding: 15px;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    float: left;
+    margin-left: 40px;
+}
+
+#a1 {
+
+    margin-left: 500px;
+}
+
+h1 {
+    padding-top: 50px;
+    color: white;
+    font-size: 40px;
+    margin-left: 400px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.hero p {
+    padding-top: 50px;
+    font-size: 20px;
+}
+
+.hero {
+    padding-left: 50px;
+    color: white;
+}
+
+
+.btn {
+    border-radius: 10px;
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#relative {
+    position: relative;
+    overflow: hidden;
+}
+
+#absolute {
+    position: absolute;
+    top: 0%;
+    color: white;
+}
+
+
+
+.wrapper h2 {
+    color: rgba(56, 71, 99, 0.692);
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    height: 300px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    overflow: hidden;
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .6s cubic-bezier(.28, -0.03, 0, .99);
+    box-shadow: 0px 10px 30px -5px rgb(48, 46, 47);
+}
+
+/* Vertical Text */
+.card::before {
+    content: attr(data-title);
+    position: absolute;
+    font-size: 24px;
+    width: 100%;
+    height: 100%;
+    font-weight: bold;
+    color: white;
+    background: rgba(32, 21, 92, 0.8);
+    border-radius: 10px;
+    transition: opacity 0.5s ease;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    width: 600px;
+}
+
+input:checked+label::before {
+    opacity: 0;
+}
+
+.card[for="c1"] {
+    background-image: url(download.jpeg);
+}
+
+.card[for="c2"] {
+    background-image: url(download\ \(2\).jpeg);
+}
+
+.card[for="c3"] {
+    background-image: url(images.jpeg);
+}
+
+.card[for="c4"] {
+    background-image: url(images\ \(1\).jpeg);
+}
+
+.card[for="c5"] {
+    background-image: url(images\ \(2\).jpeg);
+}
+
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(49, 49, 49, 0.5);
+    color: white;
+}
